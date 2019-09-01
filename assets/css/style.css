@@ -1,3 +1,14 @@
+#gameName{
+    color: white;
+    background: rgb(107, 10, 116);
+}
+.instructions{
+    color: black;
+    background:  rgb(107, 10, 116);
+}
 body{
-  background-image: url(../images/crystal.gif)
+  background-image: url(../images/crystal.gif )
+}
+.objective{
+    color: black;
 }
