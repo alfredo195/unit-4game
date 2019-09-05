@@ -18,27 +18,26 @@ $(document).ready(function() {
   var losses = 0;
   var playerTotal = 0;
 
-  $("#wins").text(wins);
-  $("#losses").text(losses);
+  $("#wins").html(wins);
+  $("#losses").html(losses);
 
   // restart game
 
   function reset() {
     random = Math.floor(Math.random() * 102 + 19);
-    console.log(random);
     $("#scoreToMatch").text(random);
     num1 = Math.floor(Math.random() * 12 + 1);
     num2 = Math.floor(Math.random() * 12 + 1);
     num3 = Math.floor(Math.random() * 12 + 1);
     num4 = Math.floor(Math.random() * 12 + 1);
     playerTotal = 0;
-    $("score").text(playerTotal);
+    $("score").html(playerTotal);
   }
   // display win
   function winner() {
     alert("You Win !");
     wins++;
-    $("#wins").text(wins);
+    $("#wins").html(wins);
     reset();
   }
 
@@ -46,13 +45,13 @@ $(document).ready(function() {
   function loser() {
     alert("You Lose !");
     losses++;
-    $("losses").text(losses);
+    $("losses").html(losses);
     reset();
   }
   // reactions to clicking on crystals
   $(".purp").on("click", function() {
     playerTotal = playerTotal + num1;
-    $("#userPoints").text(playerTotal);
+    $("#userPoints").html(playerTotal);
 
     if (playerTotal == random) {
       winner();
@@ -63,7 +62,7 @@ $(document).ready(function() {
 
   $(".yellow").on("click", function() {
     playerTotal = playerTotal + num1;
-    $("#userPoints").text(playerTotal);
+    $("#userPoints").html(playerTotal);
 
     if (playerTotal == random) {
       winner();
@@ -74,7 +73,7 @@ $(document).ready(function() {
 
   $(".red").on("click", function() {
     playerTotal = playerTotal + num1;
-    $("#userPoints").text(playerTotal);
+    $("#userPoints").html(playerTotal);
 
     if (playerTotal == random) {
       winner();
@@ -85,7 +84,7 @@ $(document).ready(function() {
 
   $(".blue").on("click", function() {
     playerTotal = playerTotal + num1;
-    $("#userPoints").text(playerTotal);
+    $("#userPoints").html(playerTotal);
 
     if (playerTotal == random) {
       winner();
