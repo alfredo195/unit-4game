@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>crystal collector</title>
@@ -29,46 +34,36 @@
       </p>
     </div>
 
+    <div class="objective" id="scoreToMatch"></div>
     <div class="container">
-    <div class="objective"></div>
-    <div class="row"> 
-    <div id="crystal">
-        <div class="col-3">
-      <button class="button">
-        <input
-          type="image"
-          src="assets/images/crystals purp.jpg"
-        />
+      <div class="row">
+        <div id="crystal">
+          <div class="col-3">
+            <button class="button">
+              <input type="image" src="assets/images/crystals purp.jpg" />
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="button">
+              <input type="image" src="assets/images/crystals yellow.jpg" />
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="button">
+              <input type="image" src="assets/images/crystals red.jpg" />
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="button">
+              <input type="image" src="assets/images/crystals blue.jpg" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-3">
-      </button>
-      <button class="button">
-        <input
-          type="image"
-          src="../unit-4game/assets/images/crystals yellow.jpg"
-        />
-    </div>
-    <div class="col-3">
-      </button>
-      <button class="button">
-        <input
-          type="image"
-          src="../unit-4game/assets/images/crystals red.jpg"
-        />
-    </div>
-    <div class="col-3"> 
-      </button>
-      <button class="button">
-        <input
-          type="image"
-          src="../unit-4game/assets/images/crystals blue.jpg"
-        />
-      </button>
-    </div>
-    </div>
-</div>
+
     <div id="score">Your total score is:</div>
     <div class="objective"></div>
-</div>
+    <script src="assets/javascript/game.js"></script>
   </body>
 </html>
