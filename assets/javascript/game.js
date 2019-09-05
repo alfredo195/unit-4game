@@ -34,4 +34,20 @@ $(document).ready(function() {
     playerTotal=0;
     $("score").text(playerTotal);
   }
+  // display win
+  function winner(){
+      alert("You Win !");
+      wins++;
+      $("#wins").text(wins);
+      reset();
+  }
+
+  // display losses
+  function loser(){
+      alert("You Lose !");
+      losses++;
+      $("losses").text(losses);
+      reset();
+  }
+  
 });
