@@ -31,23 +31,66 @@ $(document).ready(function() {
     num2 = Math.floor(Math.random() * 12 + 1);
     num3 = Math.floor(Math.random() * 12 + 1);
     num4 = Math.floor(Math.random() * 12 + 1);
-    playerTotal=0;
+    playerTotal = 0;
     $("score").text(playerTotal);
   }
   // display win
-  function winner(){
-      alert("You Win !");
-      wins++;
-      $("#wins").text(wins);
-      reset();
+  function winner() {
+    alert("You Win !");
+    wins++;
+    $("#wins").text(wins);
+    reset();
   }
 
   // display losses
-  function loser(){
-      alert("You Lose !");
-      losses++;
-      $("losses").text(losses);
-      reset();
+  function loser() {
+    alert("You Lose !");
+    losses++;
+    $("losses").text(losses);
+    reset();
   }
-  
+  // reactions to clicking on crystals
+  $(".purp").on("click", function() {
+    playerTotal = playerTotal + num1;
+    $("#userPoints").text(playerTotal);
+
+    if (playerTotal == random) {
+      winner();
+    } else if (playerTotal > random) {
+      loser();
+    }
+  });
+
+  $(".yellow").on("click", function() {
+    playerTotal = playerTotal + num1;
+    $("#userPoints").text(playerTotal);
+
+    if (playerTotal == random) {
+      winner();
+    } else if (playerTotal > random) {
+      loser();
+    }
+  });
+
+  $(".red").on("click", function() {
+    playerTotal = playerTotal + num1;
+    $("#userPoints").text(playerTotal);
+
+    if (playerTotal == random) {
+      winner();
+    } else if (playerTotal > random) {
+      loser();
+    }
+  });
+
+  $(".blue").on("click", function() {
+    playerTotal = playerTotal + num1;
+    $("#userPoints").text(playerTotal);
+
+    if (playerTotal == random) {
+      winner();
+    } else if (playerTotal > random) {
+      loser();
+    }
+  });
 });
